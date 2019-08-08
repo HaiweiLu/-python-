@@ -1,3 +1,4 @@
+# 用嵌套列表法，来实现树
 def BinaryTree(r):
     return [r, [], []]
 
@@ -29,8 +30,10 @@ def getLeftChild(root):
 def getRinghtChild(root):
     return root[2]
 
+
 if __name__ == '__main__':
     r = BinaryTree(3)
+
     insertLeft(r, 4)
     insertLeft(r, 5)
     insertRight(r, 6)
@@ -43,3 +46,4 @@ if __name__ == '__main__':
     insertLeft(l, 11)
     print(r)
     print(getRinghtChild(getRinghtChild(r)))
+    
